@@ -1,0 +1,24 @@
+# User defined function - Definition
+def add(a,b): # Input args
+    sum = a+b # Function Logic (complex as well)
+    return sum # Function Result
+
+def multiply(a,b):
+    m = a*b
+    return m
+
+print('Enter Number 1: ')
+a = input()
+print('Enter Number 2: ')
+b = input()
+print('Press 1 to add, 2 to multiply :')
+action = int(input())
+# Function Invocation
+if action == 1:
+    result = add(int(a),int(b))
+    print(result)
+elif action == 2:
+    result = multiply(int(a),int(b))
+    print(result)
+else:
+    print('User Input is not clear ')
